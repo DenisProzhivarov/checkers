@@ -1,142 +1,207 @@
 * {
-	box-sizing: border-box;
+/* 	box-sizing: border-box; */
 	transition: all .4s ease-in-out;
 	padding: 0;
 	margin: 0;
 }
 
 html, body {
-/* 	height: 100vh; */
-	
+
 }
 
 body {
-	/* margin: 0 auto; */
-	/* width: 90%;
-	padding-top: 90%; */
-}
 
+}
 
 .desk {
 	outline: 1px solid red;
 	padding: 0;
-	margin: 0;
 	margin: 0 auto;
 	text-align: center;
-
-	/* width: 100vh; */
-	/* width: 420px; */
-	/* border: 10px solid black; */
+	width: 604px;
+	height: 604px;
+	border: 4px solid #d18b47;
 	position: relative;
 }
-
 
 ul {
 	padding: 0;
 	margin: 0;
 	font-size: 0;
+	display: inline-block;
 }
 
 li {
 	font-size: 16px;
 	display: inline-block;
-	width: 80px;
-	height: 80px;
-	/* outline: 1px solid red; */
+	width: 70px;
+	height: 70px;
+	vertical-align: middle;
 }
 
-
-
+/* квадраты на доске  */
 .brown {
 	background: #d18b47;
+	font-size: 16px;
+	display: inline-block;
+	width: 70px;
+	height: 70px;
 }
 
 .yellow {
 	background: #ffce9e;
+	font-size: 16px;
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+}
+
+/* белая граница доски с цифрами и буквами  */
+.ramka{
+	font-size: 16px;
+	height: 20px;
+	line-height: 20px;
+}
+
+.small {
+	width: 22px;
+	height: 20px;
+}
+
+.side {
+	font-size: 16px;
+	display: inline-block;
+	width: 20px;
+	height: 70px;
+	line-height: 70px;
 }
 
 
+/* свойства цифр и букв*/
+
+.letter {
+	vertical-align: top;
+}
+
+.rotate {
+	transform: rotate(-180deg);
+}
+
+/* рамка доски внутренняя */
+
+.ul {
+	border-top: 2px solid #d18b47;
+	border-left: 2px solid #d18b47;
+	border-right: 2px solid #d18b47;
+}
+
+.ul2 {
+	
+	border-left: 2px solid #d18b47;
+	border-right: 2px solid #d18b47;
+}
+
+.ul3 {
+	border-bottom: 2px solid #d18b47;
+	border-left: 2px solid #d18b47;
+	border-right: 2px solid #d18b47;
+}
+
+
+/* шашки */
 
 .white {
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 	background: white;
 	border-radius: 100%;
+	transition: all .2s ease-in-out;
+	/* background-attachment: fixed; */
 }
 
 .black {
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 	background: black;
 	border-radius: 100%;
-
+	 /* background-attachment: fixed; */
+	 transition: all .2s ease-in-out;
 }
+
+.white:hover,
+.black:hover {
+	background: blue;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+
+/* позиционирование шашек */
 
 .r1 {
 	position: absolute;
-	top: 10px;
+	top:  5.25%/* 10px */ ;
 }
 
 .r2 {
 	position: absolute;
-	top: 90px;
+	top: 16.75%/* 90px */;
 }
 
 .r3 {
 	position: absolute;
-	top: 170px;
+	top: 28.25%/* 170px */;
 	
 }
 
 .r4 {
 	position: absolute;
-	top: 410px;
+	top: 63.25%/* 410px */;
 	
 }
 .r5 {
 	position: absolute;
-	top: 490px;
+	top: 74.75%/* 490px */;
 }
 
 .r6 {
 	position: absolute;
-	top: 570px;
+	top: 86.5%/* 570px */;
 	
 }
 
 
 .c1 {
-	left: 365px;
+	left: 5.25%/* 365px */;
 }
 
 .c3 {
-	left: 525px;
+	left: 28.5%/* 525px */;
 }
 
 .c5{
-	left: 685px;
+	left: 51.75%/* 685px */;
 }
 
 .c7 {
-	left: 845px;
+	left: 75%/* 845px */;
 }
 
 
 
 .c2 {
-	left: 445px;
+	left: 17%/* 445px */;
 }
 
 .c4 {
-	left: 605px;
+	left: 40.25%/* 605px */;
 }
 
 .c6  {
-	left: 765px;
+	left: 63.25%/* 765px */;
 }
 
 .c8  {
-	left: 925px;
+	left: 86.5%/* 925px */;
 }
-
 
