@@ -34,8 +34,8 @@ ul {
 li {
 	font-size: 16px;
 	display: inline-block;
-	width: 70px;
-	height: 70px;
+	/* width: 70px;
+	height: 70px; */
 	vertical-align: middle;
 }
 
@@ -61,6 +61,8 @@ li {
 	font-size: 16px;
 	height: 20px;
 	line-height: 20px;
+	width: 70px;
+	
 }
 
 .small {
@@ -84,24 +86,25 @@ li {
 }
 
 .rotate {
-	transform: rotate(-180deg);
+	transform: rotate(180deg);
+	vertical-align: middle;
 }
 
 /* рамка доски внутренняя */
 
-.ul {
+.tlr {
 	border-top: 2px solid #d18b47;
 	border-left: 2px solid #d18b47;
 	border-right: 2px solid #d18b47;
 }
 
-.ul2 {
+.lr {
 	
 	border-left: 2px solid #d18b47;
 	border-right: 2px solid #d18b47;
 }
 
-.ul3 {
+.blr {
 	border-bottom: 2px solid #d18b47;
 	border-left: 2px solid #d18b47;
 	border-right: 2px solid #d18b47;
